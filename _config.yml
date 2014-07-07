@@ -1,0 +1,6 @@
+name: Alex Greenland
+markdown: redcarpet
+pygments: true
+
+# Server
+host: localhost

@@ -1,0 +1,117 @@
+body {
+    font-family: 'News Cycle', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+.vitals .profession {
+    font-size: 13px;
+}
+
+.vitals p.lead {
+    margin-bottom: 5px;
+}
+
+.visible-xxs {
+    display: block;
+}
+
+@media (min-width: 400px) {
+    .vitals .profession {
+        font-size: 16px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .langs {
+        text-align: right;
+    }
+    
+    .vitals p.lead {
+        margin-bottom: 10px;
+    }
+    
+    .vitals .profession {
+        font-size: 21px;
+    }
+    
+}
+
+.box {
+    position: relative;
+    padding: 0.5em 1em;
+    margin-top: 1em;
+    height: 15em;
+    text-align: center;
+    color: #ffffff;
+}
+
+.box .title {
+    display: block;
+    padding-top: 1em;
+    font-size: 2.5em;
+}
+
+.box .foot {
+    position: absolute;
+    bottom: 0.5em;
+    left: 0;
+    right: 0;
+    margin: 0 1em;
+
+}
+
+
+.box a {
+    color: #ffffff !important;
+}
+
+.box.verily {
+    background-color: #009c9c;
+}
+
+.box.soton {
+    background-color: #014359;
+}
+
+.box.surrey {
+    background-color: #004682;
+}
+
+.box.deltapush {
+    background-color: #6f3da5;
+}
+
+.box.ifestival {
+    background-color: #7a174f;
+}
+
+.box .plain.title {
+    padding-top: 3em;
+    font-size: 1.5em;
+}
+
+.verily-logo {
+    font-family: 'Abril Fatface', cursive; 
+    text-decoration: none;
+    padding-top: 1em !important;
+    font-size: 3em !important;
+}
+
+.verily-logo:hover {
+    text-decoration: none;
+}
+
+.verily-logo .first-char {
+    font-family: 'Cinzel Decorative', cursive;
+    letter-spacing: -0.13em;
+}
+
+footer {
+    margin-top: 2em;
+}
+
+
