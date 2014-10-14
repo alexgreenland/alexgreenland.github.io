@@ -1,9 +1,25 @@
 body {
     font-family: 'News Cycle', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+/*    text-rendering: optimizeLegibility;*/
+/*    -webkit-font-smoothing: antialiased;*/
 }
 
-h1 {
+h1, h3 {
     font-weight: 700;
+}
+
+p {
+    margin: 10px 0;
+}
+
+p.lead {
+    margin-bottom: 10px;
+}
+
+.outlink {
+    font-size: 1.3em;
+    padding-right: 10px;
 }
 
 .vitals .profession {
@@ -11,6 +27,7 @@ h1 {
 }
 
 .vitals p.lead {
+    margin-top: 0;
     margin-bottom: 5px;
 }
 
@@ -44,61 +61,64 @@ h1 {
     position: relative;
     padding: 0.5em 1em;
     margin-top: 1em;
-    height: 15em;
-    text-align: center;
-    color: #ffffff;
+/*    height: 15em;*/
+/*    color: #ffffff;*/
+    border-left-style: solid;
+    border-left-width: 6px;
 }
 
 .box .title {
-    display: block;
-    padding-top: 1em;
-    font-size: 2.5em;
+/*    display: block;*/
+/*    padding-top: 1em;*/
+/*    font-size: 2.5em;*/
 }
 
 .box .foot {
-    position: absolute;
+/*    position: absolute;
     bottom: 0.5em;
     left: 0;
     right: 0;
-    margin: 0 1em;
+    margin: 0 1em;*/
 
 }
 
 
 .box a {
-    color: #ffffff !important;
+
 }
 
 .box.verily {
-    background-color: #009c9c;
+    border-left-color: #00aaaa;
 }
 
 .box.soton {
-    background-color: #014359;
+    border-left-color: #014359;
 }
 
 .box.surrey {
-    background-color: #004682;
+    border-left-color: #004682;
 }
 
 .box.deltapush {
-    background-color: #6f3da5;
+   border-left-color: #6f3da5;
 }
 
 .box.ifestival {
-    background-color: #7a174f;
+    border-left-color: #7a174f;
 }
 
 .box .plain.title {
-    padding-top: 3em;
+/*    padding-top: 3em;*/
     font-size: 1.5em;
+    font-weight: 700;
 }
 
 .verily-logo {
     font-family: 'Abril Fatface', cursive; 
     text-decoration: none;
-    padding-top: 1em !important;
+/*    padding-top: 1em !important;*/
     font-size: 3em !important;
+    color: #00aaaa;
 }
 
 .verily-logo:hover {
