@@ -59,27 +59,16 @@ p.lead {
 
 .box {
     position: relative;
-    padding: 0.5em 1em;
+    padding: 0 1em;
     margin-top: 1em;
-/*    height: 15em;*/
-/*    color: #ffffff;*/
     border-left-style: solid;
     border-left-width: 6px;
 }
 
 .box .title {
-/*    display: block;*/
-/*    padding-top: 1em;*/
-/*    font-size: 2.5em;*/
 }
 
 .box .foot {
-/*    position: absolute;
-    bottom: 0.5em;
-    left: 0;
-    right: 0;
-    margin: 0 1em;*/
-
 }
 
 
@@ -108,7 +97,6 @@ p.lead {
 }
 
 .box .plain.title {
-/*    padding-top: 3em;*/
     font-size: 1.5em;
     font-weight: 700;
 }
@@ -116,7 +104,6 @@ p.lead {
 .verily-logo {
     font-family: 'Abril Fatface', cursive; 
     text-decoration: none;
-/*    padding-top: 1em !important;*/
     font-size: 3em !important;
     color: #00aaaa;
 }
@@ -133,5 +120,4 @@ p.lead {
 footer {
     margin-top: 2em;
 }
-
 
