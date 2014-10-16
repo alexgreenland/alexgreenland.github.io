@@ -84,6 +84,10 @@ p.lead {
     border-left-color: #00aaaa;
 }
 
+.box.epiarc, .box.spur {
+    border-left-color: #333;
+}
+
 .box.soton {
     border-left-color: #014359;
 }
