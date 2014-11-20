@@ -84,7 +84,11 @@ p.lead {
     border-left-color: #00aaaa;
 }
 
-.box.epiarc, .box.spur {
+.box {
+    border-left-color: #333;
+}
+
+.box.urlcanon, .box.subnecto, .box.civicguide, .box.epiarc, .box.spur {
     border-left-color: #333;
 }
 
