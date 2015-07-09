@@ -121,6 +121,14 @@ p.lead {
     color: #00aaaa;
 }
 
+.faveparts-logo {
+    font-family: 'Playfair Display', cursive; 
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+	color: inherit;
+}
+
 .verily-logo:hover {
     text-decoration: none;
 }

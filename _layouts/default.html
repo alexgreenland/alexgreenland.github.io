@@ -11,7 +11,7 @@
         
         <!--<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>-->
         
-        <link href="//fonts.googleapis.com/css?family=News+Cycle:400,700|Abril+Fatface|Cinzel+Decorative:900" rel="stylesheet" type="text/css">
+        <link href="//fonts.googleapis.com/css?family=News+Cycle:400,700|Abril+Fatface|Playfair+Display:400,700,900|Cinzel+Decorative:900" rel="stylesheet" type="text/css">
 
         <!-- Latest compiled and minified JavaScript -->
         <!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>-->
@@ -29,7 +29,12 @@
         
         <footer>
             <div class="container">
-
+				<div>
+					&copy; {{ site.time | date: '%Y' }} {{ site.name }}
+				</div>
+				<div class="text-muted">
+					Trademarks are the property of their respective owners.
+				</div>
             </div>
         </footer>
     </body>
