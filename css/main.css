@@ -49,8 +49,8 @@ p.lead {
 
 .self-image {
 	width: 12em;
-	-webkit-clip-path: circle(44% at 48% 51%);
-	clip-path: circle(44% at 48% 51%);
+	-webkit-clip-path: circle(48% at 50% 49%);
+	clip-path: circle(48% at 50% 49%);
 	margin: 0 auto;
 }
 
