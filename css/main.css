@@ -71,8 +71,6 @@ p.lead {
 	
 	.self-image {
 		float: right;
-		position: relative;
-		top: -10px;
 	}
 }
 
