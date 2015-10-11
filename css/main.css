@@ -39,6 +39,10 @@ p.lead {
     display: block;
 }
 
+.line-height-0 {
+	line-height: 0;
+}
+
 .vitals .info {
 	text-align: center;
 }
