@@ -1,8 +1,8 @@
 body {
     font-family: 'News Cycle', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 16px;
-/*    text-rendering: optimizeLegibility;*/
-/*    -webkit-font-smoothing: antialiased;*/
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
 
 h1, h3 {
@@ -39,26 +39,41 @@ p.lead {
     display: block;
 }
 
+.vitals .info {
+	text-align: center;
+}
+
+.self-image {
+	width: 12em;
+	-webkit-clip-path: circle(44% at 48% 51%);
+	clip-path: circle(44% at 48% 51%);
+	margin: 0 auto;
+}
+
 @media (min-width: 400px) {
     .vitals .profession {
         font-size: 16px;
     }
 }
 
+@media (min-width: 768px) {    
+	.vitals .profession {
+	    font-size: 21px;
+	}
+	
+	.vitals .info {
+		text-align: left;
+	}
+	
+	.self-image {
+		float: right;
+		position: relative;
+		top: -10px;
+	}
+}
 
-@media (min-width: 768px) {
-    .langs {
-        text-align: right;
-    }
-    
-    .vitals p.lead {
-        margin-bottom: 10px;
-    }
-    
-    .vitals .profession {
-        font-size: 21px;
-    }
-    
+.vitals p.lead {
+    margin-bottom: 10px;
 }
 
 .box {
@@ -73,11 +88,15 @@ p.lead {
 }
 
 .box .foot {
+	
 }
-
 
 .box a {
 
+}
+
+.box.singletrack {
+    border-left-color: #eea20c;
 }
 
 .box.verily {
@@ -111,6 +130,13 @@ p.lead {
 .box .plain.title {
 /*    font-size: 1.5em;*/
 /*    font-weight: 700;*/
+}
+
+.singletrack-logo {
+	display: block;
+	background: url(/images/singletrack-logo.png) no-repeat;
+	width: 225px;
+	height: 27px;
 }
 
 .verily-logo {
