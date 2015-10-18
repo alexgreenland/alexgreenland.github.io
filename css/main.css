@@ -39,8 +39,37 @@ p.lead {
     display: block;
 }
 
+.fa-stack-ctr-1x {
+	width: 1em;
+	height: 1em;
+	line-height: 1em;
+}
+
+.fa-stack-point5x {
+	font-size: 0.5em;
+}
+
+.fave-parts-quavers {
+	color: #fff;
+	left: -0.1em;
+}
+
+.faveparts-logotype-adjacent {
+	top: -0.1em;
+}
+
 .line-height-0 {
 	line-height: 0;
+}
+
+ul.nav-linear {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul.nav-linear li {
+    display: inline-block;
+    padding-right: 10px;
 }
 
 .vitals .info {
