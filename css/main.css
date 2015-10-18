@@ -39,6 +39,11 @@ p.lead {
     display: block;
 }
 
+.pilcrow {
+	padding-right: 0.5em;
+	color: #999;
+}
+
 .fa-stack-ctr-1x {
 	width: 1em;
 	height: 1em;
@@ -76,6 +81,10 @@ ul.nav-linear li {
 	text-align: center;
 }
 
+.nav-linear {
+	text-align: center;
+}
+
 .self-image {
 	width: 12em;
 	-webkit-clip-path: circle(48% at 50% 49%);
@@ -95,6 +104,10 @@ ul.nav-linear li {
 	}
 	
 	.vitals .info {
+		text-align: left;
+	}
+	
+	.nav-linear {
 		text-align: left;
 	}
 	
