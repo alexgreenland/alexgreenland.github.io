@@ -184,6 +184,7 @@ ul.nav-linear li {
 	display: block;
 	background: url(/images/singletrack-cmyk.svg) no-repeat;
 	height: 1.5em;
+    max-width: 12em;
 }
 
 .verily-logo {
