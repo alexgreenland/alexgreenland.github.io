@@ -144,7 +144,7 @@ ul.nav-linear li {
 }
 
 .box.singletrack {
-    border-left-color: #eea20c;
+    border-left-color: #f0ac00;
 }
 
 .box.verily {
@@ -182,9 +182,8 @@ ul.nav-linear li {
 
 .singletrack-logo {
 	display: block;
-	background: url(/images/singletrack-logo.png) no-repeat;
-	width: 225px;
-	height: 27px;
+	background: url(/images/singletrack-cmyk.svg) no-repeat;
+	height: 2em;
 }
 
 .verily-logo {
