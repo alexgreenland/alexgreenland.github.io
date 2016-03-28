@@ -6,6 +6,20 @@
         <title>{% if page.title %}{{ page.title }} &middot; {% endif %}{{ site.name }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="{{ page.title }}">
+        <meta property="og:site_name" content="{{ site.name }}">
+        <meta property="og:url" content="{{ page.url }}">
+        <meta property="og:description" content="{{ page.description }}">
+        <meta property="og:image" content="{{ page.thumb }}">
+        
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@ajrgreenland">
+        <meta name="twitter:creator" content="@ajrgreenland">
+        <meta name="twitter:title" content="{{ page.title }}">
+        <meta name="twitter:description" content="{{ page.description }}">
+        <meta name="twitter:image" content="{{ page.thumb }}">
+        
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         
