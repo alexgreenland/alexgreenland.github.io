@@ -1,6 +1,7 @@
 name: Alex Greenland
 markdown: redcarpet
 highlighter: rouge
+url: http://alexgreenland.com
 
 # Server
 host: localhost

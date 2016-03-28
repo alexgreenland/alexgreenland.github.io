@@ -9,16 +9,16 @@
         <meta property="og:type" content="website">
         <meta property="og:title" content="{{ page.title }}">
         <meta property="og:site_name" content="{{ site.name }}">
-        <meta property="og:url" content="{{ page.url }}">
+        <meta property="og:url" content="{{ site.url }}{{ page.url }}">
         <meta property="og:description" content="{{ page.description }}">
-        <meta property="og:image" content="{{ page.thumb }}">
+        <meta property="og:image" content="{{ site.url }}{{ page.thumb }}">
         
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="@ajrgreenland">
         <meta name="twitter:creator" content="@ajrgreenland">
         <meta name="twitter:title" content="{{ page.title }}">
         <meta name="twitter:description" content="{{ page.description }}">
-        <meta name="twitter:image" content="{{ page.thumb }}">
+        <meta name="twitter:image" content="{{ site.url }}{{ page.thumb }}">
         
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
