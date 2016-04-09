@@ -1,0 +1,15 @@
+{
+  "name": "london-underground-viz",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex Greenland",
+  "license": "AGPL-3.0",
+  "devDependencies": {
+    "jsonfile": "^2.2.3"
+  }
+}

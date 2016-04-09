@@ -350,3 +350,17 @@ main.places .hero .h1, main.places .hero h1 {
 .places .hero p {
     max-width: 700px;
 }
+
+.tube.visualisation-container .node {
+    stroke: #333;
+    stroke-width: 3px;
+    fill: #fff;
+}
+
+.tube.visualisation-container .link {
+    stroke-opacity: .8;
+}
+
+.tube.visualisation-container .link.northern {
+    stroke: #333;
+}
