@@ -1,10 +1,10 @@
-var width = 960;
+var width = 1400;
 var height = 900;
 
 var color = d3.scale.category20();
 
 var force = d3.layout.force()
-            .charge(-120)
+            .charge(-10)
             .linkDistance(30)
             .size([width, height]);
             
@@ -27,7 +27,7 @@ d3.json('tube.json', function(err, graph) {
                 .data(graph.links)
                 .enter().append('line')
                 .attr('class', function(d) {
-                    return 'link ' + d.lineName.toLowerCase();
+                    return 'link ' + d.lineName.toLowerCase().replace(/&/g, '').replace(/ +/g, '-');
                 }).style('stroke-width', function(d) {
                     return 5;
                 });

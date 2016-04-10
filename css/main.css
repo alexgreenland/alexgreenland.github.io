@@ -355,12 +355,47 @@ main.places .hero .h1, main.places .hero h1 {
     stroke: #333;
     stroke-width: 3px;
     fill: #fff;
+    cursor: pointer;
 }
 
 .tube.visualisation-container .link {
     stroke-opacity: .8;
+    stroke: #999;
 }
 
 .tube.visualisation-container .link.northern {
-    stroke: #333;
+    stroke: #000;
 }
+
+.tube.visualisation-container .link.waterloo-city {
+    stroke: #76d0bd;
+}
+
+.tube.visualisation-container .link.central {
+    stroke: #dc241f;
+}
+
+.tube.visualisation-container .link.bakerloo {
+    stroke: #894e24;
+}
+
+.tube.visualisation-container .link.jubilee {
+    stroke: #6a7278;
+}
+
+.tube.visualisation-container .link.piccadilly {
+    stroke: #0019a8;
+}
+
+.tube.visualisation-container .link.victoria {
+    stroke: #00a0e2;
+}
+
+.tube.visualisation-container .link.district {
+    stroke: #007229;
+}
+
+.tube.visualisation-container .link.circle {
+    stroke: #ffce00;
+}
+
