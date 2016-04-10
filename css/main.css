@@ -351,6 +351,13 @@ main.places .hero .h1, main.places .hero h1 {
     max-width: 700px;
 }
 
+.tube.visualisation-container svg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
 .tube.visualisation-container .node {
     stroke: #333;
     stroke-width: 3px;
@@ -398,4 +405,13 @@ main.places .hero .h1, main.places .hero h1 {
 .tube.visualisation-container .link.circle {
     stroke: #ffce00;
 }
+
+.tube.visualisation-container .link.hammersmith-city {
+    stroke: #d799af;
+}
+
+.tube.visualisation-container .link.metropolitan {
+    stroke: #751056;
+}
+
 

@@ -192,6 +192,7 @@ var generateCentralLine = function() {
 var generateBakerlooLine = function() {
     generateBranch('Bakerloo', 'Main', [
         'Elephant & Castle',
+        'Lambeth North',
         'Waterloo',
         'Charing Cross',
         'Piccadilly Circus',
@@ -199,7 +200,7 @@ var generateBakerlooLine = function() {
         'Regent\'s Park',
         'Baker Street',
         'Marylebone',
-        'Edgware Road',
+        'Edgware Road (Bakerloo Line)',
         'Paddington',
         'Warwick Avenue',
         'Maida Vale',
@@ -252,7 +253,7 @@ var generatePiccadillyLine = function() {
     generateBranch('Piccadilly', 'Main', [
         'Acton Town',
         'Turnham Green',
-        'Hammersmith',
+        'Hammersmith (Piccadilly and District Lines)',
         'Barons Court',
         'Earl\'s Court',
         'Gloucester Road',
@@ -378,14 +379,14 @@ var generateDistrictLine = function() {
         'Notting Hill Gate',
         'Bayswater',
         'Paddington',
-        'Edgware Road'
+        'Edgware Road (Circle, District and Hammersmith & City Lines)'
     ]);
     
     generateBranch('District', 'Main', [
         'Turnham Green',
         'Stamford Brook',
         'Ravenscourt Park',
-        'Hammersmith',
+        'Hammersmith (Piccadilly and District Lines)',
         'Barons Court',
         'West Kensington',
         'Earl\'s Court',
@@ -426,7 +427,7 @@ var generateDistrictLine = function() {
 
 var generateCircleLine = function() {
     generateBranch('Circle', 'Main', [
-        'Hammersmith',
+        'Hammersmith (Hammersmith & City and Circle Lines)',
         'Goldhawk Road',
         'Shepherd\'s Bush Market',
         'Wood Lane',
@@ -435,7 +436,7 @@ var generateCircleLine = function() {
         'Westbourne Park',
         'Royal Oak',
         'Paddington',
-        'Edgware Road',
+        'Edgware Road (Circle, District and Hammersmith & City Lines)',
         'Baker Street',
         'Great Portland Street',
         'Euston Square',
@@ -462,7 +463,96 @@ var generateCircleLine = function() {
         'Notting Hill Gate',
         'Bayswater',
         'Paddington',
-        'Edgware Road'
+        'Edgware Road (Circle, District and Hammersmith & City Lines)'
+    ]);
+};
+
+var generateHammersmithAndCityLine = function() {
+    generateBranch('Hammersmith & City', 'Main', [
+        'Hammersmith (Hammersmith & City and Circle Lines)',
+        'Goldhawk Road',
+        'Shepherd\'s Bush Market',
+        'Wood Lane',
+        'Latimer Road',
+        'Ladbroke Grove',
+        'Westbourne Park',
+        'Royal Oak',
+        'Paddington',
+        'Edgware Road (Circle, District and Hammersmith & City Lines)',
+        'Baker Street',
+        'Great Portland Street',
+        'Euston Square',
+        'King\'s Cross St. Pancras',
+        'Farringdon',
+        'Barbican',
+        'Moorgate',
+        'Liverpool Street',
+        'Aldgate East',
+        'Whitechapel',
+        'Stepney Green',
+        'Mile End',
+        'Bow Road',
+        'Bromley-by-Bow',
+        'West Ham',
+        'Plaistow',
+        'Upton Park',
+        'East Ham',
+        'Barking'
+    ]);
+};
+
+var generateMetropolitanLine = function() {
+    generateBranch('Metropolitan', 'Main', [
+        'Baker Street',
+        'Finchley Road',
+        'Wembley Park',
+        'Preston Road',
+        'Northwick Park',
+        'Harrow-on-the-Hill',
+        'North Harrow',
+        'Pinner',
+        'Northwood Hills',
+        'Northwood',
+        'Moor Park',
+        'Rickmansworth',
+        'Chorleywood',
+        'Chalfont & Latimer',
+        'Amersham'
+    ]);
+    
+    generateBranch('Metropolitan', 'Uxbridge Branch', [
+        'Harrow-on-the-Hill',
+        'West Harrow',
+        'Rayners Lane',
+        'Eastcote',
+        'Ruislip Manor',
+        'Ruislip',
+        'Ickenham',
+        'Hillingdon',
+        'Uxbridge'
+    ]);
+    
+    generateBranch('Metropolitan', 'Watford', [
+        'Moor Park',
+        'Croxley',
+        'Watford'
+    ]);
+    
+    generateBranch('Metropolitan', 'Chesham', [
+        'Chalfont & Latimer',
+        'Chesham'
+    ]);
+    
+    generateBranch('Metropolitan', 'Circle Branch', [
+        'Baker Street',
+        'Great Portland Street',
+        'Euston Square',
+        'King\'s Cross St. Pancras',
+        'Farringdon',
+        'Barbican',
+        'Moorgate',
+        'Liverpool Street',
+        'Aldgate'
     ]);
 };
 
@@ -477,6 +567,8 @@ var generateLinks = function() {
     generateVictoriaLine();
     generateDistrictLine();
     generateCircleLine();
+    generateHammersmithAndCityLine();
+    generateMetropolitanLine();
 };
 
 

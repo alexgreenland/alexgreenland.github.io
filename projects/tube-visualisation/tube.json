@@ -277,11 +277,11 @@
             "group": 1
         },
         {
-            "name": "Edgware Road",
+            "name": "Edgware Road (Bakerloo Line)",
             "group": 1
         },
         {
-            "name": "Edgware Road",
+            "name": "Edgware Road (Circle, District and Hammersmith & City Lines)",
             "group": 1
         },
         {
@@ -377,11 +377,11 @@
             "group": 1
         },
         {
-            "name": "Hammersmith",
+            "name": "Hammersmith (Piccadilly and District Lines)",
             "group": 1
         },
         {
-            "name": "Hammersmith",
+            "name": "Hammersmith (Hammersmith & City and Circle Lines)",
             "group": 1
         },
         {
@@ -1992,6 +1992,15 @@
             "line": 0,
             "sourceName": "Elephant & Castle",
             "source": 71,
+            "targetName": "Lambeth North",
+            "target": 132,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Bakerloo",
+            "line": 0,
+            "sourceName": "Lambeth North",
+            "source": 132,
             "targetName": "Waterloo",
             "target": 245,
             "branchName": "Main"
@@ -2055,14 +2064,14 @@
             "line": 0,
             "sourceName": "Marylebone",
             "source": 145,
-            "targetName": "Edgware Road",
+            "targetName": "Edgware Road (Bakerloo Line)",
             "target": 69,
             "branchName": "Main"
         },
         {
             "lineName": "Bakerloo",
             "line": 0,
-            "sourceName": "Edgware Road",
+            "sourceName": "Edgware Road (Bakerloo Line)",
             "source": 69,
             "targetName": "Paddington",
             "target": 171,
@@ -2424,14 +2433,14 @@
             "line": 8,
             "sourceName": "Turnham Green",
             "source": 232,
-            "targetName": "Hammersmith",
+            "targetName": "Hammersmith (Piccadilly and District Lines)",
             "target": 94,
             "branchName": "Main"
         },
         {
             "lineName": "Piccadilly",
             "line": 8,
-            "sourceName": "Hammersmith",
+            "sourceName": "Hammersmith (Piccadilly and District Lines)",
             "source": 94,
             "targetName": "Barons Court",
             "target": 15,
@@ -3198,8 +3207,8 @@
             "line": 3,
             "sourceName": "Paddington",
             "source": 171,
-            "targetName": "Edgware Road",
-            "target": 69,
+            "targetName": "Edgware Road (Circle, District and Hammersmith & City Lines)",
+            "target": 70,
             "branchName": "Edgware"
         },
         {
@@ -3225,14 +3234,14 @@
             "line": 3,
             "sourceName": "Ravenscourt Park",
             "source": 184,
-            "targetName": "Hammersmith",
+            "targetName": "Hammersmith (Piccadilly and District Lines)",
             "target": 94,
             "branchName": "Main"
         },
         {
             "lineName": "District",
             "line": 3,
-            "sourceName": "Hammersmith",
+            "sourceName": "Hammersmith (Piccadilly and District Lines)",
             "source": 94,
             "targetName": "Barons Court",
             "target": 15,
@@ -3547,8 +3556,8 @@
         {
             "lineName": "Circle",
             "line": 2,
-            "sourceName": "Hammersmith",
-            "source": 94,
+            "sourceName": "Hammersmith (Hammersmith & City and Circle Lines)",
+            "source": 95,
             "targetName": "Goldhawk Road",
             "target": 86,
             "branchName": "Main"
@@ -3621,15 +3630,15 @@
             "line": 2,
             "sourceName": "Paddington",
             "source": 171,
-            "targetName": "Edgware Road",
-            "target": 69,
+            "targetName": "Edgware Road (Circle, District and Hammersmith & City Lines)",
+            "target": 70,
             "branchName": "Main"
         },
         {
             "lineName": "Circle",
             "line": 2,
-            "sourceName": "Edgware Road",
-            "source": 69,
+            "sourceName": "Edgware Road (Circle, District and Hammersmith & City Lines)",
+            "source": 70,
             "targetName": "Baker Street",
             "target": 9,
             "branchName": "Main"
@@ -3864,9 +3873,558 @@
             "line": 2,
             "sourceName": "Paddington",
             "source": 171,
-            "targetName": "Edgware Road",
-            "target": 69,
+            "targetName": "Edgware Road (Circle, District and Hammersmith & City Lines)",
+            "target": 70,
             "branchName": "Main"
+        },
+        {
+            "lineName": "Hammersmith & City",
+            "line": 4,
+            "sourceName": "Hammersmith (Hammersmith & City and Circle Lines)",
+            "source": 95,
+            "targetName": "Goldhawk Road",
+            "target": 86,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Hammersmith & City",
+            "line": 4,
+            "sourceName": "Goldhawk Road",
+            "source": 86,
+            "targetName": "Shepherd's Bush Market",
+            "target": 201,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Hammersmith & City",
+            "line": 4,
+            "sourceName": "Shepherd's Bush Market",
+            "source": 201,
+            "targetName": "Wood Lane",
+            "target": 266,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Hammersmith & City",
+            "line": 4,
+            "sourceName": "Wood Lane",
+            "source": 266,
+            "targetName": "Latimer Road",
+            "target": 134,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Hammersmith & City",
+            "line": 4,
+            "sourceName": "Latimer Road",
+            "source": 134,
+            "targetName": "Ladbroke Grove",
+            "target": 131,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Hammersmith & City",
+            "line": 4,
+            "sourceName": "Ladbroke Grove",
+            "source": 131,
+            "targetName": "Westbourne Park",
+            "target": 257,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Hammersmith & City",
+            "line": 4,
+            "sourceName": "Westbourne Park",
+            "source": 257,
+            "targetName": "Royal Oak",
+            "target": 191,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Hammersmith & City",
+            "line": 4,
+            "sourceName": "Royal Oak",
+            "source": 191,
+            "targetName": "Paddington",
+            "target": 171,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Hammersmith & City",
+            "line": 4,
+            "sourceName": "Paddington",
+            "source": 171,
+            "targetName": "Edgware Road (Circle, District and Hammersmith & City Lines)",
+            "target": 70,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Hammersmith & City",
+            "line": 4,
+            "sourceName": "Edgware Road (Circle, District and Hammersmith & City Lines)",
+            "source": 70,
+            "targetName": "Baker Street",
+            "target": 9,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Hammersmith & City",
+            "line": 4,
+            "sourceName": "Baker Street",
+            "source": 9,
+            "targetName": "Great Portland Street",
+            "target": 89,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Hammersmith & City",
+            "line": 4,
+            "sourceName": "Great Portland Street",
+            "source": 89,
+            "targetName": "Euston Square",
+            "target": 76,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Hammersmith & City",
+            "line": 4,
+            "sourceName": "Euston Square",
+            "source": 76,
+            "targetName": "King's Cross St. Pancras",
+            "target": 129,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Hammersmith & City",
+            "line": 4,
+            "sourceName": "King's Cross St. Pancras",
+            "source": 129,
+            "targetName": "Farringdon",
+            "target": 78,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Hammersmith & City",
+            "line": 4,
+            "sourceName": "Farringdon",
+            "source": 78,
+            "targetName": "Barbican",
+            "target": 12,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Hammersmith & City",
+            "line": 4,
+            "sourceName": "Barbican",
+            "source": 12,
+            "targetName": "Moorgate",
+            "target": 149,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Hammersmith & City",
+            "line": 4,
+            "sourceName": "Moorgate",
+            "source": 149,
+            "targetName": "Liverpool Street",
+            "target": 138,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Hammersmith & City",
+            "line": 4,
+            "sourceName": "Liverpool Street",
+            "source": 138,
+            "targetName": "Aldgate East",
+            "target": 2,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Hammersmith & City",
+            "line": 4,
+            "sourceName": "Aldgate East",
+            "source": 2,
+            "targetName": "Whitechapel",
+            "target": 260,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Hammersmith & City",
+            "line": 4,
+            "sourceName": "Whitechapel",
+            "source": 260,
+            "targetName": "Stepney Green",
+            "target": 216,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Hammersmith & City",
+            "line": 4,
+            "sourceName": "Stepney Green",
+            "source": 216,
+            "targetName": "Mile End",
+            "target": 146,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Hammersmith & City",
+            "line": 4,
+            "sourceName": "Mile End",
+            "source": 146,
+            "targetName": "Bow Road",
+            "target": 27,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Hammersmith & City",
+            "line": 4,
+            "sourceName": "Bow Road",
+            "source": 27,
+            "targetName": "Bromley-by-Bow",
+            "target": 30,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Hammersmith & City",
+            "line": 4,
+            "sourceName": "Bromley-by-Bow",
+            "source": 30,
+            "targetName": "West Ham",
+            "target": 252,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Hammersmith & City",
+            "line": 4,
+            "sourceName": "West Ham",
+            "source": 252,
+            "targetName": "Plaistow",
+            "target": 178,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Hammersmith & City",
+            "line": 4,
+            "sourceName": "Plaistow",
+            "source": 178,
+            "targetName": "Upton Park",
+            "target": 237,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Hammersmith & City",
+            "line": 4,
+            "sourceName": "Upton Park",
+            "source": 237,
+            "targetName": "East Ham",
+            "target": 65,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Hammersmith & City",
+            "line": 4,
+            "sourceName": "East Ham",
+            "source": 65,
+            "targetName": "Barking",
+            "target": 13,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Metropolitan",
+            "line": 6,
+            "sourceName": "Baker Street",
+            "source": 9,
+            "targetName": "Finchley Road",
+            "target": 80,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Metropolitan",
+            "line": 6,
+            "sourceName": "Finchley Road",
+            "source": 80,
+            "targetName": "Wembley Park",
+            "target": 248,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Metropolitan",
+            "line": 6,
+            "sourceName": "Wembley Park",
+            "source": 248,
+            "targetName": "Preston Road",
+            "target": 179,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Metropolitan",
+            "line": 6,
+            "sourceName": "Preston Road",
+            "source": 179,
+            "targetName": "Northwick Park",
+            "target": 162,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Metropolitan",
+            "line": 6,
+            "sourceName": "Northwick Park",
+            "source": 162,
+            "targetName": "Harrow-on-the-Hill",
+            "target": 100,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Metropolitan",
+            "line": 6,
+            "sourceName": "Harrow-on-the-Hill",
+            "source": 100,
+            "targetName": "North Harrow",
+            "target": 158,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Metropolitan",
+            "line": 6,
+            "sourceName": "North Harrow",
+            "source": 158,
+            "targetName": "Pinner",
+            "target": 177,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Metropolitan",
+            "line": 6,
+            "sourceName": "Pinner",
+            "source": 177,
+            "targetName": "Northwood Hills",
+            "target": 164,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Metropolitan",
+            "line": 6,
+            "sourceName": "Northwood Hills",
+            "source": 164,
+            "targetName": "Northwood",
+            "target": 163,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Metropolitan",
+            "line": 6,
+            "sourceName": "Northwood",
+            "source": 163,
+            "targetName": "Moor Park",
+            "target": 150,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Metropolitan",
+            "line": 6,
+            "sourceName": "Moor Park",
+            "source": 150,
+            "targetName": "Rickmansworth",
+            "target": 189,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Metropolitan",
+            "line": 6,
+            "sourceName": "Rickmansworth",
+            "source": 189,
+            "targetName": "Chorleywood",
+            "target": 47,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Metropolitan",
+            "line": 6,
+            "sourceName": "Chorleywood",
+            "source": 47,
+            "targetName": "Chalfont & Latimer",
+            "target": 40,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Metropolitan",
+            "line": 6,
+            "sourceName": "Chalfont & Latimer",
+            "source": 40,
+            "targetName": "Amersham",
+            "target": 4,
+            "branchName": "Main"
+        },
+        {
+            "lineName": "Metropolitan",
+            "line": 6,
+            "sourceName": "Harrow-on-the-Hill",
+            "source": 100,
+            "targetName": "West Harrow",
+            "target": 254,
+            "branchName": "Uxbridge Branch"
+        },
+        {
+            "lineName": "Metropolitan",
+            "line": 6,
+            "sourceName": "West Harrow",
+            "source": 254,
+            "targetName": "Rayners Lane",
+            "target": 185,
+            "branchName": "Uxbridge Branch"
+        },
+        {
+            "lineName": "Metropolitan",
+            "line": 6,
+            "sourceName": "Rayners Lane",
+            "source": 185,
+            "targetName": "Eastcote",
+            "target": 67,
+            "branchName": "Uxbridge Branch"
+        },
+        {
+            "lineName": "Metropolitan",
+            "line": 6,
+            "sourceName": "Eastcote",
+            "source": 67,
+            "targetName": "Ruislip Manor",
+            "target": 194,
+            "branchName": "Uxbridge Branch"
+        },
+        {
+            "lineName": "Metropolitan",
+            "line": 6,
+            "sourceName": "Ruislip Manor",
+            "source": 194,
+            "targetName": "Ruislip",
+            "target": 192,
+            "branchName": "Uxbridge Branch"
+        },
+        {
+            "lineName": "Metropolitan",
+            "line": 6,
+            "sourceName": "Ruislip",
+            "source": 192,
+            "targetName": "Ickenham",
+            "target": 119,
+            "branchName": "Uxbridge Branch"
+        },
+        {
+            "lineName": "Metropolitan",
+            "line": 6,
+            "sourceName": "Ickenham",
+            "source": 119,
+            "targetName": "Hillingdon",
+            "target": 110,
+            "branchName": "Uxbridge Branch"
+        },
+        {
+            "lineName": "Metropolitan",
+            "line": 6,
+            "sourceName": "Hillingdon",
+            "source": 110,
+            "targetName": "Uxbridge",
+            "target": 238,
+            "branchName": "Uxbridge Branch"
+        },
+        {
+            "lineName": "Metropolitan",
+            "line": 6,
+            "sourceName": "Moor Park",
+            "source": 150,
+            "targetName": "Croxley",
+            "target": 55,
+            "branchName": "Watford"
+        },
+        {
+            "lineName": "Metropolitan",
+            "line": 6,
+            "sourceName": "Croxley",
+            "source": 55,
+            "targetName": "Watford",
+            "target": 246,
+            "branchName": "Watford"
+        },
+        {
+            "lineName": "Metropolitan",
+            "line": 6,
+            "sourceName": "Chalfont & Latimer",
+            "source": 40,
+            "targetName": "Chesham",
+            "target": 44,
+            "branchName": "Chesham"
+        },
+        {
+            "lineName": "Metropolitan",
+            "line": 6,
+            "sourceName": "Baker Street",
+            "source": 9,
+            "targetName": "Great Portland Street",
+            "target": 89,
+            "branchName": "Circle Branch"
+        },
+        {
+            "lineName": "Metropolitan",
+            "line": 6,
+            "sourceName": "Great Portland Street",
+            "source": 89,
+            "targetName": "Euston Square",
+            "target": 76,
+            "branchName": "Circle Branch"
+        },
+        {
+            "lineName": "Metropolitan",
+            "line": 6,
+            "sourceName": "Euston Square",
+            "source": 76,
+            "targetName": "King's Cross St. Pancras",
+            "target": 129,
+            "branchName": "Circle Branch"
+        },
+        {
+            "lineName": "Metropolitan",
+            "line": 6,
+            "sourceName": "King's Cross St. Pancras",
+            "source": 129,
+            "targetName": "Farringdon",
+            "target": 78,
+            "branchName": "Circle Branch"
+        },
+        {
+            "lineName": "Metropolitan",
+            "line": 6,
+            "sourceName": "Farringdon",
+            "source": 78,
+            "targetName": "Barbican",
+            "target": 12,
+            "branchName": "Circle Branch"
+        },
+        {
+            "lineName": "Metropolitan",
+            "line": 6,
+            "sourceName": "Barbican",
+            "source": 12,
+            "targetName": "Moorgate",
+            "target": 149,
+            "branchName": "Circle Branch"
+        },
+        {
+            "lineName": "Metropolitan",
+            "line": 6,
+            "sourceName": "Moorgate",
+            "source": 149,
+            "targetName": "Liverpool Street",
+            "target": 138,
+            "branchName": "Circle Branch"
+        },
+        {
+            "lineName": "Metropolitan",
+            "line": 6,
+            "sourceName": "Liverpool Street",
+            "source": 138,
+            "targetName": "Aldgate",
+            "target": 1,
+            "branchName": "Circle Branch"
         }
     ]
 }
