@@ -139,6 +139,10 @@ ul.nav-linear li {
     border-left-width: 6px;
 }
 
+.box > h3 {
+    padding-top: 5px;
+}
+
 .box .title {
 }
 
@@ -154,8 +158,18 @@ ul.nav-linear li {
     border-left-color: #f0ac00;
 }
 
+.box.singletrack svg.timeline-interchange circle,
+.box.singletrack svg.timeline-stop line {
+    stroke: #f0ac00;
+}
+
 .box.verily {
     border-left-color: #00aaaa;
+}
+
+.box.verily svg.timeline-interchange circle,
+.box.verily svg.timeline-stop line {
+    stroke: #00aaaa;
 }
 
 .box {
@@ -170,16 +184,36 @@ ul.nav-linear li {
     border-left-color: #014359;
 }
 
+.box.soton svg.timeline-interchange circle,
+.box.soton svg.timeline-stop line {
+    stroke: #014359;
+}
+
 .box.surrey {
     border-left-color: #004682;
+}
+
+.box.surrey svg.timeline-interchange circle,
+.box.surrey svg.timeline-stop line {
+    stroke: #004682;
 }
 
 .box.deltapush {
    border-left-color: #6f3da5;
 }
 
+.box.deltapush svg.timeline-interchange circle,
+.box.deltapush svg.timeline-stop line {
+    stroke: #6f3da5;
+}
+
 .box.ifestival {
     border-left-color: #7a174f;
+}
+
+.box.ifestival svg.timeline-interchange circle,
+.box.ifestival svg.timeline-stop line {
+    stroke: #7a174f;
 }
 
 .box .plain.title {
@@ -350,6 +384,48 @@ main.places .hero .h1, main.places .hero h1 {
 
 .places .hero p {
     max-width: 700px;
+}
+
+svg.timeline-interchange {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -13px;
+}
+
+.box .timeline-item svg.timeline-interchange {
+    margin-top: 3px;
+}
+
+.box > h3 > svg.timeline-interchange {
+    margin-top: 5px;
+}
+
+.box.verily > h3 > svg.timeline-interchange,
+.box.faveparts > h3 > svg.timeline-interchange {
+    margin-top: 18px;
+}
+
+svg.timeline-interchange circle {
+    stroke: #333;
+    stroke-width: 20px;
+    fill: #fff;
+}
+
+svg.timeline-stop {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+}
+
+.box .timeline-item svg.timeline-stop {
+    margin-top: 2px;
+}
+
+svg.timeline-stop line {
+    stroke: #333;
+    stroke-width: 20px;
 }
 
 .tube.visualisation-container svg {

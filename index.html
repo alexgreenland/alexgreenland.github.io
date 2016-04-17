@@ -36,26 +36,46 @@ layout: default
 	
 	<section id="industry" class="industry">
 		<h2>Industry</h2>
-		
+        
         <section class="box singletrack">
             <h3>
+                {% include timeline-interchange.html %}
                 <a href="http://singletrack.com/" class="title singletrack-logo" title="Singletrack">
                 </a>
             </h3>
+            
+            <p class="lead">
+               The leveraged CRM for capital markets. Built as a flexible revenue-driven Salesforce-based platform for sell-side firms, Singletrack maximises the return on their sales, research and corporate services. 
+            </p>
         
-            <div class="foot">
-                December 2014 &ndash;
+            <div class="timeline-item foot">
+                {% include timeline-stop.html %}
+                <strong>Senior Developer</strong>
                 <br>
-                Developer
+                April 2016 &ndash;
+                <br>
+                HTML(5), JavaScript, Node.js, Sass, CSS(3), Visualforce, Apex, SOQL, Ruby on Rails
+                <p class="lead">
+                    Leading the UI and UX activities at Singletrack. Responsible for developing the platform in HTML(5), JavaScript, Node.js, Sass, CSS(3), Visualforce, Apex and SOQL; and development of research portals, job processing, analytics, research distribution, research aggregation services and supporting developer services in Ruby on Rails.
+                </p>
+            </div>
+            
+            <div class="timeline-item foot">
+                {% include timeline-stop.html %}
+                <strong>Developer</strong>
+                <br>
+                December 2014 &ndash; April 2016
                 <br>
                 HTML(5), JavaScript, CSS(3), Visualforce, Apex, SOQL, Ruby on Rails
                 <p class="lead">
-                    Leading the UI and UX efforts for Singletrack, the leveraged CRM for capital markets. Built as a flexible revenue-driven Salesforce-based platform for sell-side firms, Singletrack maximises the return on their sales, research and corporate services. Responsible for developing the platform in HTML(5), JavaScript, CSS(3), Visualforce, Apex and SOQL; and development of job processing, email distribution and aggregation servers in Ruby on Rails.
+                    Leading the UI and UX efforts for Singletrack. Responsible for developing the platform in HTML(5), JavaScript, CSS(3), Visualforce, Apex and SOQL; and development of research portals, job processing, analytics, research distribution, research aggregation services and supporting developer services in Ruby on Rails.
                 </p>
-                <span class="outlink">
-                    <i class="fa fa-globe"></i>
-                    <a href="http://singletrack.com/">Singletrack</a>
-                </span>
+                <p>
+                    <span class="outlink">
+                        <i class="fa fa-globe"></i>
+                        <a href="http://singletrack.com/">Singletrack</a>
+                    </span>
+                </p>
             </div>
         </section>
         <!-- / .box.singletrack -->
@@ -68,19 +88,21 @@ layout: default
         <!-- box.verily -->
         <section class="box verily">
             <h3>
+                {% include timeline-interchange.html %}
                 <a href="https://veri.ly/" class="title verily-logo" title="Verily">
                     <span class="first-char">V</span>erily
                 </a>
             </h3>
         
-            <div class="foot">
-                2014 &ndash;
+            <div class="timeline-item foot">
+                
+                <strong>Lead Developer</strong>
                 <br>
-                Full-stack web developer
+                2014 &ndash;
                 <br>
                 Node.js, Postgres, HTML5, JS, AJAX, CSS
                 <p class="lead">
-                    Lead developer of social, responsive web application for collecting and verifying crowdsourced evidence following natural disasters, offering a more effective humanitarian response. Development is part of a team in ECS at Southampton. UN Office for the Coordination of Humanitarian Affairs (OCHA) intends to utilise Verily in next natural disaster deployment; interest received from government departments and media organisations internationally. Featured in <a href="https://www.technologyreview.com/s/537036/online-fact-checking-tool-gets-a-big-test-with-nepal-earthquake/">MIT Technology Review</a>.
+                    Lead Developer of social, responsive web application for collecting and verifying crowdsourced evidence following natural disasters, offering a more effective humanitarian response. Development is full-stack as part of a team in ECS at Southampton. UN Office for the Coordination of Humanitarian Affairs (OCHA) intends to utilise Verily in next natural disaster deployment; interest received from government departments and media organisations internationally. Featured in <a href="https://www.technologyreview.com/s/537036/online-fact-checking-tool-gets-a-big-test-with-nepal-earthquake/">MIT Technology Review</a>.
                 </p>
                 <span class="outlink">
                     <i class="fa fa-globe"></i>
@@ -97,16 +119,17 @@ layout: default
         <!-- box.faveparts -->
         <section class="box faveparts">
             <h3>
+                {% include timeline-interchange.html %}
 				<a href="https://fave.parts/" class="title faveparts-logo" title="Fave Parts"><span class="fa-stack fa-stack-ctr-1x faveparts-logotype-adjacent"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-music fa-stack-1x fa-stack-point5x fave-parts-quavers"></i></span></a>
                 <a href="https://fave.parts/" class="title faveparts-logo" title="Fave Parts">
                     Fave Parts
                 </a>
             </h3>
         
-            <div class="foot">
-                2015 &ndash;
+            <div class="timeline-item foot">
+                <strong>Creator, Contributor</strong>
                 <br>
-                Creator and contributor
+                2015 &ndash;
                 <br>
                 HTML5, Jekyll, CSS3, JS
                 <p class="lead">
@@ -131,16 +154,17 @@ layout: default
         <!-- box.subnecto -->
         <section class="box subnecto">
             <h3 class="plain title">
+                {% include timeline-interchange.html %}
                 Subnecto
             </h3>
-            <div class="foot">
-                2015 &ndash;
+            <div class="timeline-item foot">
+                <strong>Author</strong>
                 <br>
-                Author, Personal Project
+                2015 &ndash;
 				<br>
 				JS
                 <br>
-                Licence: <a href="https://github.com/alexgreenland/url-canon/blob/master/LICENSE">Apache License 2.0</a>
+                Licence: <a href="https://github.com/alexgreenland/subnecto/blob/master/LICENSE">Apache License 2.0</a>
                 <p class="lead">
                     A lightweight, extensible and reactive model-driven library.
                 </p>
@@ -159,12 +183,13 @@ layout: default
         <!-- box.urlcanon -->
         <section class="box urlcanon">
             <h3 class="plain title">
+                {% include timeline-interchange.html %}
                 URL Canon
             </h3>
-            <div class="foot">
-                2014 &ndash;
+            <div class="timeline-item foot">
+                <strong>Author</strong>
                 <br>
-                Author, Personal Project
+                2014 &ndash;
                 <br>
                 Licence: <a href="https://github.com/alexgreenland/url-canon/blob/master/LICENSE">Apache License 2.0</a>
                 <p class="lead">
@@ -186,12 +211,14 @@ layout: default
         <!-- box.movieman -->
         <section class="box movieman">
             <h3 class="plain title">
+                {% include timeline-interchange.html %}
                 Movieman
             </h3>
-            <div class="foot">
+            <div class="timeline-item foot">
+                <strong>Author</strong>
+                <br>
                 2014 &ndash;
                 <br>
-                Author, Personal Project
                 <p class="lead">
                     Movie collection manager.
                 </p>
@@ -202,12 +229,13 @@ layout: default
         <!-- box.civicguide -->
         <section class="box civicguide">
             <h3 class="plain title">
+                {% include timeline-interchange.html %}
                 Civicguide
             </h3>
-            <div class="foot">
-                2014 &ndash;
+            <div class="timeline-item foot">
+                <strong>Author</strong>
                 <br>
-                Author, Personal Project
+                2014 &ndash;                
                 <p class="lead">
                     In development.
                 </p>
@@ -218,12 +246,13 @@ layout: default
         <!-- box.epiarc -->
         <section class="box epiarc">
             <h3 class="plain title">
+                {% include timeline-interchange.html %}
                 Epiarc, Epi, Epilink
             </h3>
-            <div class="foot">
-                2014 &ndash;
+            <div class="timeline-item foot">
+                <strong>Author</strong>
                 <br>
-                Author, Personal Projects
+                2014 &ndash;
                 <p class="lead">
                     In development.
                 </p>
@@ -234,92 +263,30 @@ layout: default
         <!-- box.spur -->
         <section class="box spur">
             <h3 class="plain title">
+                {% include timeline-interchange.html %}
                 Spur
             </h3>
-            <div class="foot">
-                2014 &ndash;
+            <div class="timeline-item foot">
+                <strong>Author</strong>
                 <br>
-                Author, Personal Project
+                2014 &ndash;
                 <p class="lead">
                     In development.
                 </p>
             </div>
         </section>
         <!-- / .box.spur -->
-    
-        <!-- box.rapidface -->
-        <section class="box rapidface hidden">
-            <h3 class="plain title">
-                Rapidface
-            </h3>
-            <div class="foot">
-                2014 &ndash;
-                <br>
-                Author, Personal Project
-                <p class="lead">
-                    In development.
-                </p>
-            </div>
-        </section>
-        <!-- / .box.rapidface -->
-    
-        <!-- box.foodqr -->
-        <section class="box foodqr hidden">
-            <h3 class="plain title">
-                FoodQR
-            </h3>
-            <div class="foot">
-                2014 &ndash;
-                <br>
-                Author, Personal Project
-                <p class="lead">
-                    In development.
-                </p>
-            </div>
-        </section>
-        <!-- / .box.foodqr -->
-    
-        <!-- box.statelessserver -->
-        <section class="box statelessserver hidden">
-            <h3 class="plain title">
-                Stateless Server
-            </h3>
-            <div class="foot">
-                2014 &ndash;
-                <br>
-                Author, Personal Project
-                <p class="lead">
-                    In development.
-                </p>
-            </div>
-        </section>
-        <!-- / .box.statelessserver -->
-    
-        <!-- box.humantime -->
-        <section class="box humantime hidden">
-            <h3 class="plain title">
-                Humantime
-            </h3>
-            <div class="foot">
-                2014 &ndash;
-                <br>
-                Author, Personal Project
-                <p class="lead">
-                    Natural language time converter. In development.
-                </p>
-            </div>
-        </section>
-        <!-- / .box.humantime -->
         
         <!-- box.deltapush -->
         <section class="box deltapush">
             <h3 class="plain title">
+                {% include timeline-interchange.html %}
                 Deltapush
             </h3>
-            <div class="foot">
-                2012 &ndash; 2013
+            <div class="timeline-item foot">
+                <strong>Author</strong>
                 <br>
-                Author, Personal Project
+                2012 &ndash; 2013
                 <br>
                 Node.js, Redis, Git
                 <p class="lead">
@@ -332,12 +299,15 @@ layout: default
         <!-- box.ifestival -->
         <section class="box ifestival">
             <h3 class="plain title">
+                {% include timeline-interchange.html %}
                 IFestival
             </h3>
-            <div class="foot">
-                2010
+            <div class="timeline-item foot">
+                <strong>Developer</strong>
                 <br>
-                PHP, MySQL
+                HTML, CSS, PHP, MySQL
+                <br>
+                2010                
                 <p class="lead">
                     Developed IFestival website for <a href="http://www.ussu.co.uk/">Surrey Students' Union</a> in a team from University of Surrey Computing Society (CompSoc). We developed a website for an event recognising diversity in lifestyle, culture and food.
                 </p>
@@ -350,12 +320,13 @@ layout: default
         <!-- box.soton -->
         <section class="box soton">
             <h3 class="plain title">
+                {% include timeline-interchange.html %}
                 MSc Web Technology
             </h3>
-            <div class="foot">
-                2013 &ndash; 2014
-                <br>
+            <div class="timeline-item foot">
                 <strong>Distinction. 81% aggregate</strong>
+                <br>
+                2013 &ndash; 2014
                 <br>
                 <a href="http://www.ecs.soton.ac.uk/">ECS</a>, <a href="http://www.southampton.ac.uk/">University of Southampton</a>
                 <p class="lead">
@@ -368,12 +339,13 @@ layout: default
         <!-- box.surrey -->
         <section class="box surrey">
             <h3 class="plain title">
+                {% include timeline-interchange.html %}
                 BSc Computer Science
             </h3>
-            <div class="foot">
-                2009 &ndash; 2013
-                <br>
+            <div class="timeline-item foot">
                 <strong>First Class Honours. 85% aggregate</strong>
+                <br>
+                2009 &ndash; 2013
                 <br>
                 <a href="http://www.surrey.ac.uk/">University of Surrey</a>
                 <p class="lead">
