@@ -1,6 +1,7 @@
 body {
     font-family: 'News Cycle', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 16px;
+    padding-bottom: 65px;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 }
@@ -363,6 +364,10 @@ main.places .hero .h1, main.places .hero h1 {
     stroke-width: 3px;
     fill: #fff;
     cursor: pointer;
+}
+
+.tube.visualisation-container .node.fixed {
+    fill: #42abfc;
 }
 
 .tube.visualisation-container .link {
