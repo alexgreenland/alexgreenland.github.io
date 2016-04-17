@@ -7,10 +7,21 @@
     var color = d3.scale.category20();
 
     var force = d3.layout.force()
-                .charge(-120)
+                .charge(-100)
                 .linkDistance(20)
                 .gravity(0.1)
                 .size([width, height]);
+                
+    var doubleClick = function(d) {
+        d3.select(this).classed('fixed', d.fixed = false);
+    };
+                
+    var dragStart = function(d) {
+        d3.select(this).classed('fixed', d.fixed = true);
+    };
+                
+    var drag = force.drag()
+                .on('dragstart', dragStart);
             
     var svg = d3.select('.visualisation-container')
                 .append('svg')
@@ -43,7 +54,8 @@
                     .enter().append('circle')
                     .attr('class', 'node')
                     .attr('r', 5)
-                    .call(force.drag);
+                    .on('dblclick', doubleClick)
+                    .call(drag);
     
         node.append('title')
                     .text(function(d) {

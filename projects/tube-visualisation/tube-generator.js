@@ -2,6 +2,12 @@
 
 // $.map($('table.stations tr th'), function(element) { return $(element).text() })
 
+// $.map($('table.stations tr th'), function(element, index) { var returner = {}; returner[$(element).text()] = $('table.stations tr:eq(' + (index - 8) +') td:eq(1)').text(); return returner; })
+
+// JSON.stringify($.map($('table.stations tr th'), function(element, index) { var returner = {}; returner[$(element).text()] = $('table.stations tr:eq(' + (index - 8) +') td:eq(1)').text().replace(/\[.\]/g, '').split('\n'); return returner; }))
+
+// JSON.stringify($.map($('table.stations tr th'), function(element, index) { var data = {}; data.name = $(element).text(); data.lines = $('table.stations tr:eq(' + (index - 8) +') td:eq(1)').text().replace(/\[.\]/g, '').split('\n'); return data; }))
+
 var json = require('jsonfile');
 
 var stations = json.readFileSync('stations.json');
