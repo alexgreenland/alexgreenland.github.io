@@ -21,11 +21,19 @@
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
           })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		  
+		  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+		  ga('create', 'UA-75626861-1', 'auto');
 
-          ga('create', 'UA-75626861-1', 'auto');
+		  ga('require', 'maxScrollTracker');
+		  ga('require', 'mediaQueryTracker');
+		  ga('require', 'outboundLinkTracker');
+		  ga('require', 'urlChangeTracker');
+
           ga('send', 'pageview');
-
         </script>
+		<script async src="//www.google-analytics.com/analytics.js"></script>
+		<script async src="//cdnjs.cloudflare.com/ajax/libs/autotrack/1.1.0/autotrack.js"></script>
     </head>
     <body>
         <a href="#content" class="sr-only">Skip to main content</a>
@@ -43,7 +51,7 @@
             </div>
         </footer>
         
-        <script src="//code.jquery.com/jquery-1.12.3.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
         <script src="/js/app.js"></script>
         
 		<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
