@@ -69,6 +69,10 @@ p.lead {
 	top: -0.1em;
 }
 
+.vitals .info .icon-unsplash {
+	font-size: 0.9em;
+}
+
 .line-height-0 {
 	line-height: 0;
 }
