@@ -19,14 +19,7 @@
         <script>	  
 		  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
 		  ga('create', 'UA-75626861-1', 'auto');
-		  ga('require', 'maxScrollTracker', {
-		    hitFilter: function(model) {
-		      var scrollPercentage = model.get('eventLabel');
-		      if (scrollPercentage > 50) {
-		        model.set('nonInteraction', true, true);
-		      }
-		    },
-		  });
+		  ga('require', 'maxScrollTracker');
 		  ga('require', 'outboundLinkTracker');
 		  ga('require', 'urlChangeTracker');
           ga('send', 'pageview');
