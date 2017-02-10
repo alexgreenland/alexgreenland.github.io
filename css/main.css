@@ -99,18 +99,18 @@ ul.nav-linear li {
     width: 4em;
 	-webkit-clip-path: circle(48% at 50% 49%);
 	clip-path: circle(48% at 50% 49%);
-	
 }
 
 .home .self-image {
 	width: 12em;
+    margin: 0 auto;
 }
 
-@media (min-width: 768px) {    
-	.vitals .profession {
-	    font-size: 21px;
-	}
-	
+.vitals .profession {
+    font-size: 21px;
+}
+
+@media (min-width: 768px) {
 	.vitals .info {
 		text-align: left;
 	}
@@ -124,7 +124,7 @@ ul.nav-linear li {
 @media (min-width: 992px) {
 	.home .self-image {
 		float: right;
-		margin: 0 auto;
+		margin: 0;
 	}
 }
 
