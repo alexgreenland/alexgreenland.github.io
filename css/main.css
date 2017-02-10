@@ -104,13 +104,6 @@ ul.nav-linear li {
 
 .home .self-image {
 	width: 12em;
-    margin: 0 auto;
-}
-
-@media (min-width: 400px) {
-    .vitals .profession {
-        font-size: 16px;
-    }
 }
 
 @media (min-width: 768px) {    
@@ -125,9 +118,13 @@ ul.nav-linear li {
 	.nav-linear {
 		text-align: left;
 	}
-	
+
+}
+
+@media (min-width: 992px) {
 	.home .self-image {
 		float: right;
+		margin: 0 auto;
 	}
 }
 
