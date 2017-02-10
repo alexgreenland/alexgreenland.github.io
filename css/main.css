@@ -111,6 +111,11 @@ ul.nav-linear li {
 }
 
 @media (min-width: 768px) {
+	.home .self-image {
+		width: 12em;
+	    margin: 0;
+	}
+	
 	.vitals .info {
 		text-align: left;
 	}
@@ -124,7 +129,6 @@ ul.nav-linear li {
 @media (min-width: 992px) {
 	.home .self-image {
 		float: right;
-		margin: 0;
 	}
 }
 
