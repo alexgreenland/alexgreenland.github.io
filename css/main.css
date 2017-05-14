@@ -77,6 +77,12 @@ p.lead {
 	line-height: 0;
 }
 
+.middot {
+	color: #999;
+	position: relative;
+	top: 2px;
+}
+
 ul.nav-linear {
     list-style-type: none;
     padding-left: 0;
@@ -84,7 +90,6 @@ ul.nav-linear {
 
 ul.nav-linear li {
     display: inline-block;
-    padding-right: 10px;
 }
 
 .vitals .info {
