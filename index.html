@@ -6,7 +6,7 @@ layout: default
     <section class="vitals">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-3 col-md-push-9">
-				<img src="/images/self-4.jpg" class="img-responsive self-image">
+				<img src="/images/self.jpg" alt="Alex Greenland" class="img-responsive self-image">
             </div>
             <div class="info col-xs-12 col-sm-12 col-md-9 col-md-pull-3">
 				<h1>Alex Greenland</h1>
@@ -31,28 +31,87 @@ layout: default
     <!-- / .vitals -->
 	
 	<section id="industry" class="industry">
-		<h2>Industry</h2>
+        <h2>Industry</h2>
+        
+        <!-- box.epi -->
+        <section class="box epi">
+            <h3 class="title epi">
+                {% include timeline-interchange.html %}
+                <a class="epi-logo" href="https://epi.app/" title="Epi"></a>
+            </h3>
+
+            <p class="lead">
+                Providing discovery and enterprise search services with the universal launcher for sites, documents, apps and actions. Running on the <a href="https://epiarc.org/">Epiarc</a>, Epi improves performance and productivity for consumers, businesses and enterprise. Learn more about <a href="https://epi.app/">Epi</a>, the <a href="https://epi.app/about">team</a> and follow our story in <a href="https://launch.blog/">Launch</a>, the blog chronicling our progress.
+            </p>
+            
+            <div class="timeline-item foot">
+                {% include timeline-stop.html %}
+                <strong>CEO & Co-founder</strong>
+                <br>
+                2019 &ndash;
+                <p class="lead">
+                    Leading the company and product, setting our direction and vision.
+                </p>
+                <p>
+                    <span class="outlink">
+                        <i class="fa fa-globe"></i>
+                        <a href="https://epi.app/">Epi</a>
+                    </span>
+                </p>
+            </div>
+        </section>
+        <!-- / .box.epi -->
+
+        <div class="epi-hero">
+            <img src="/images/epi-team.jpg" alt="Epi Team" class="img-responsive">
+        </div>
+        
+        <!-- box.epiarc -->
+        <section class="box epi">
+            <h3 class="title epiarc">
+                {% include timeline-interchange.html %}
+                <a class="epiarc-logo" href="https://epiarc.org/" title="Epiarc"></a>
+            </h3>
+
+            <p class="lead">
+                The archetypal name system and open distributed network providing consensus on names as identifiers.
+            </p>
+
+            <div class="timeline-item foot">
+                {% include timeline-stop.html %}
+                2019 &ndash;
+                <p class="lead">
+                    Stewards the Epiarc, managing standards and setting the overall direction.
+                </p>
+                <p>
+                    <span class="outlink">
+                        <i class="fa fa-globe"></i>
+                        <a href="https://epiarc.org/">Epiarc</a>
+                    </span>
+                </p>
+            </div>
+        </section>
+        <!-- / .box.epiarc -->
         
         <section class="box singletrack">
             <h3>
                 {% include timeline-interchange.html %}
-                <a href="http://singletrack.com/" class="title singletrack-logo singletrack-link" title="Singletrack">
+                <a href="https://www.singletrack.com/" class="title singletrack-logo singletrack-link" title="Singletrack">
                 </a>
             </h3>
             
             <p class="lead">
-               The leveraged CRM for capital markets. Built as a flexible revenue-driven Salesforce-based platform for sell-side firms, Singletrack maximises the return on their sales, research and corporate services. 
+               A leading capital markets CRM and investment research distribution. Built as a flexible revenue-driven Salesforce-based platform for sell-side firms, Singletrack maximises the return on their sales, research and corporate services. 
             </p>
         
             <div class="timeline-item foot">
                 {% include timeline-stop.html %}
                 <strong>Senior Developer</strong>
                 <br>
-                April 2016 &ndash;
+                2016 &ndash; 2018
                 <br>
-                HTML(5), JavaScript, Node.js, Sass, CSS(3), Visualforce, Apex, SOQL, Ruby on Rails
                 <p class="lead">
-                    Leading the UI and UX activities at Singletrack. Responsible for developing the platform in HTML(5), JavaScript, Node.js, Sass, CSS(3), Visualforce, Apex and SOQL; and development of research portals, job processing, analytics, research distribution, research aggregation services and supporting developer services in Ruby on Rails.
+                    Led product and design at Singletrack. Spearheaded the overhaul of the design and architecture of the core product, and created a pioneering investment research engagement product. 
                 </p>
             </div>
             
@@ -60,16 +119,16 @@ layout: default
                 {% include timeline-stop.html %}
                 <strong>Developer</strong>
                 <br>
-                December 2014 &ndash; April 2016
+                2014 &ndash; 2016
                 <br>
-                HTML(5), JavaScript, CSS(3), Visualforce, Apex, SOQL, Ruby on Rails
+                HTML(5), JavaScript, Node.js, Sass, CSS(3), Visualforce, Apex, SOQL, Ruby on Rails
                 <p class="lead">
-                    Leading the UI and UX efforts for Singletrack. Responsible for developing the platform in HTML(5), JavaScript, CSS(3), Visualforce, Apex and SOQL; and development of research portals, job processing, analytics, research distribution, research aggregation services and supporting developer services in Ruby on Rails.
+                    Led the UI and UX efforts for Singletrack. Responsible for developing the platform in HTML(5), JavaScript, CSS(3), Visualforce, Apex and SOQL; and development of research portals, job processing, analytics, research distribution, research aggregation services and supporting developer services in Ruby on Rails.
                 </p>
                 <p>
                     <span class="outlink">
                         <i class="fa fa-globe"></i>
-                        <a href="http://singletrack.com/">Singletrack</a>
+                        <a href="https://www.singletrack.com/">Singletrack</a>
                     </span>
                 </p>
             </div>
@@ -81,43 +140,7 @@ layout: default
     
     <section id="projects" class="projects">
         <h2>Projects</h2>
-		
-        <!-- box.epi -->
-        <section class="box epi">
-            <h3 class="title epi">
-                {% include timeline-interchange.html %}
-                <a class="epi-logo" href="https://epiapp.com/" title="Epi"></a>
-            </h3>
-            <div class="timeline-item foot">
-                2014 &ndash;
-                <p>
-                    <span class="outlink">
-                        <i class="fa fa-globe"></i>
-                        <a href="https://epiapp.com/">Epi</a>
-                    </span>
-                </p>
-            </div>
-        </section>
-        <!-- / .box.epi -->
-        
-        <!-- box.epiarc -->
-        <section class="box epi">
-            <h3 class="title epiarc">
-                {% include timeline-interchange.html %}
-                <a class="epiarc-logo" href="http://epiarc.org/" title="Epiarc"></a>
-            </h3>
-            <div class="timeline-item foot">
-                2014 &ndash;
-                <p>
-                    <span class="outlink">
-                        <i class="fa fa-globe"></i>
-                        <a href="http://epiarc.org/">Epiarc</a>
-                    </span>
-                </p>
-            </div>
-        </section>
-        <!-- / .box.epiarc -->
-		
+				
         <!-- box.verily -->
         <section class="box verily">
             <h3>
@@ -131,7 +154,7 @@ layout: default
                 
                 <strong>Lead Developer</strong>
                 <br>
-                2014 &ndash;
+                2014 &ndash; 2015
                 <br>
                 Node.js, Postgres, HTML5, JS, AJAX, CSS
                 <p class="lead">
@@ -346,14 +369,14 @@ layout: default
     <section id="awards" class="awards">
         <h2>Awards</h2>
         <section class="award">
-            <h3>Richard Newitt Bursary</h3>
+            <h3>Richard Newitt Prize</h3>
             <p class="lead">
-                Recipient of the Southampton postgraduate bursary for the strongest capability of demonstrable effect in the field of web technology.
+                Recipient of the Southampton postgraduate prize for the strongest capability of demonstrable effect in the field of web technology.
             </p>
         </section>
 		
         <section class="award">
-            <h3>The Department of Energy &amp; Climate Change Prize</h3>
+            <h3>UK Government Department of Energy &amp; Climate Change Prize</h3>
             <p class="lead">
                 Awarded for the best student performance in the final year of the BSc Computer Science programme.
             </p>
