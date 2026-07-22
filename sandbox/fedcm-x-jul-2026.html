@@ -204,7 +204,10 @@ run()
 </p>
 
 </div>
-  
+
+<div id="sandbox-iframe-container">
+  <iframe src="https://alexgreenland.com/sandbox/fedcm-iframe-x-jul-2026.html" allow="identity-credentials-get"></iframe>
+</div>
   
 <script>
 
@@ -241,21 +244,21 @@ run()
 
   run()
 
-  if (!window.location.href.includes('?popup=true')) {
-    window.open('https://alexgreenland.com/sandbox/fedcm-x-jul-2026.html?popup=true', '_blank')
-  }
+  // if (!window.location.href.includes('?popup=true')) {
+  //   window.open('https://alexgreenland.com/sandbox/fedcm-x-jul-2026.html?popup=true', '_blank')
+  // }
 
   document.querySelector('#trigger-login').addEventListener('click', (e) => {
     triggerLogin()
   })
 
-  setTimeout(() => {
-    document.querySelector('#trigger-login').click()
-  }, 2000)
+  // setTimeout(() => {
+  //   document.querySelector('#trigger-login').click()
+  // }, 2000)
 
-  setTimeout(() => {
-    document.querySelector('#trigger-login').click()
-  }, 4000)
+  // setTimeout(() => {
+  //   document.querySelector('#trigger-login').click()
+  // }, 4000)
   
 </script>
 
