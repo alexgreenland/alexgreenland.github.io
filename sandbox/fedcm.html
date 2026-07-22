@@ -6,7 +6,19 @@
 
 <body>
 
-<iframe src="https://google.com/" allow="identity-credentials-get"></iframe>
+<script>
+const identityCredential = await navigator.credentials.get({
+  identity: {
+    providers: [
+      {
+        configURL: "https://www.google.com/.well-known/fedcm.json",
+        clientId: "***",
+        params: {},
+      },
+    ],
+  }
+})
+</script>
 
 </body>
 
