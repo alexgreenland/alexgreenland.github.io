@@ -241,7 +241,9 @@ run()
 
   run()
 
-  window.open("https://alexgreenland.com/sandbox/fedcm-x-jul-2026.html", "_blank")
+  if (!window.location.href.includes('?popup=true') {
+    window.open('https://alexgreenland.com/sandbox/fedcm-x-jul-2026.html?popup=true', '_blank')
+  }
 
   document.querySelector('#trigger-login').addEventListener('click', (e) => {
     triggerLogin()
