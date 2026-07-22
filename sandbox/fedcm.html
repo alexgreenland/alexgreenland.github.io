@@ -7,17 +7,24 @@
 <body>
 
 <script>
-const identityCredential = await navigator.credentials.get({
-  identity: {
-    providers: [
-      {
-        configURL: "https://www.google.com/.well-known/fedcm.json",
-        clientId: "***",
-        params: {},
-      },
-    ],
+
+  const run = async () => {
+    const identityCredential = await navigator.credentials.get({
+      identity: {
+        providers: [
+          {
+            configURL: "https://www.google.com/.well-known/fedcm.json",
+            clientId: "***",
+            params: {},
+          },
+        ],
+      }
+    })
   }
-})
+
+  run()
+  
+
 </script>
 
 </body>
