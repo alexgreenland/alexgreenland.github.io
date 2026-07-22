@@ -18,8 +18,18 @@
       padding: 2rem;
     }
 
+    code {
+      font-family: ui-monospace, monospace;
+    }
+
     li {
       padding-bottom: 1rem;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+      max-width: 1000px;
     }
   </style>
 
@@ -80,6 +90,39 @@
   <li>0-click adult content</li>
 </ul>
 
+<h3>
+  Minimal Reproducible Example
+</h3>
+
+<p>
+  The <code>configURL</code> is specified and controlled by the threat actor.
+</p>
+
+<p>
+  We set the <code>configURL</code> as the Google FedCM demo site, <code>fedcm-demo-idp.dev</code>.
+</p>
+
+<p>
+<pre><code>
+const run = async () => {
+  const identityCredential = await navigator.credentials.get({
+    mediation: "required",
+    identity: {
+      providers: [
+        {
+          configURL: "https://fedcm-demo-idp.dev/fedcm.json",
+          clientId: "*** [not needed for threat actor]",
+          params: {},
+        },
+      ],
+    }
+  })
+}
+
+run()
+</code></pre>
+</p>
+
 
 <h3>
   FedCM flow
@@ -87,11 +130,18 @@
 
 <p>
   <img src="./fedcm-flow.png" alt="FedCM flow" />
+  <a href="https://developer.mozilla.org/en-US/docs/Web/API/FedCM_API/RP_sign-in">Source: MDN</a>
 </p>
 
 <h3>
   References
 </h3>
+
+<p>
+  <a href="https://fedcm-demo-idp.dev/">Google FedCM Demo</a>
+  <br>
+  This demo uses the Google-official identity provider demo for FedCM at <a href="https://fedcm-demo-idp.dev/">fedcm-demo-idp.dev</a>
+</p>
 
 <p>
   <a href="https://developer.mozilla.org/en-US/docs/Web/API/FedCM_API">FedCM API — MDN</a>
