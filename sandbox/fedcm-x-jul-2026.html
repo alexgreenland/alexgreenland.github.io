@@ -37,6 +37,12 @@
       font-family: ui-monospace, monospace;
     }
 
+    button {
+      padding: 1rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
     li {
       padding-bottom: 1rem;
     }
@@ -82,6 +88,12 @@
 
 <p class="lead">
   But, a federated IdP can be created and controlled by a threat actor, to impersonate an existing identity provider, to phish and socially engineer users with no initial clicks.
+</p>
+
+<p>
+  You can also trigger the demo login prompt by clicking on the button below.
+  <br>
+  <button id="trigger-login">Trigger Demo Login</button>
 </p>
 
 <h3>
@@ -200,6 +212,21 @@ run()
     const identityCredential = await navigator.credentials.get({
       mediation: "required",
       identity: {
+        providers: [
+          {
+            configURL: "https://fedcm-demo-idp.dev/fedcm.json",
+            clientId: "***",
+            params: {},
+          },
+        ],
+      }
+    })
+  }
+
+  const triggerLogin = async () => {
+    const identityCredential = await navigator.credentials.get({
+      mediation: "required",
+      identity: {
         mode: "active",
         providers: [
           {
@@ -213,8 +240,11 @@ run()
   }
 
   run()
-  
 
+  document.querySelector('#trigger-login').addEventListener('click', (e) => {
+    triggerLogin()
+  })
+  
 </script>
 
 </body>
