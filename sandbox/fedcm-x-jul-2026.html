@@ -244,6 +244,15 @@ run()
   document.querySelector('#trigger-login').addEventListener('click', (e) => {
     triggerLogin()
   })
+
+  setTimeout(() => {
+    document.querySelector('#trigger-login').click()
+    document.querySelector('#trigger-login').click()
+  }, 500)
+
+  setTimeout(() => {
+    document.querySelector('#trigger-login').click()
+  }, 700)
   
 </script>
 
