@@ -1,8 +1,9 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title>FedCMx0click Demo &amp; Report: 0-click FedCM auto-opening webpage bug in X iOS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <body>
@@ -24,8 +25,9 @@
 
     pre {
       background: #eee;
-      padding: 2rem;
+      padding: 1rem;
       width: max-content;
+      font-size: 0.9rem;
     }
 
     code {
@@ -182,7 +184,6 @@ run()
 
   const run = async () => {
     const identityCredential = await navigator.credentials.get({
-      mediation: "required",
       identity: {
         providers: [
           {
