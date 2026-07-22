@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Sandbox FedCM Demo</title>
+</head>
+
+<body>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+    }
+  </style>
+
+<h1>Sandbox and reproduction for 0-click FedCM auto-opening webpage bug in X iOS app</h1>
+
+<p>
+  Report and demo by Alex Greenland, Epi Security (<a href="https://epihq.com">epihq.com</a>)
+  <br>
+  22 July 2026
+</p>
+
+<p>
+  <strong>There is currently a bug in the X iOS app which automatically opens FedCM login pages unprompted when a user clicks on a tweet. </strong>
+</p>
+
+<p>
+  This webpage is a demo to open a browser-native screen to log in with a federated identity provider, using the FedCM (Federated Credential Management) browser API.
+</p>
+
+<p>
+  <em>This is a client-side demo page and it does not collect any user details or credentials. Do not log in or accept any prompts triggered by this demo.</em>
+</p>
+
+<p>
+  A federated identity provider (IdP) can be a popular or well-known provider like Google, Okta, Microsoft Entra/AD, Microsoft Personal, Facebook, GitHub, or a service you and your team use every day.
+</p>
+
+<p>
+  But, a federated IdP can be created and controlled by a threat actor, to impersonate an existing identity provider, to phish and socially engineer users with no initial clicks.
+</p>
+
+<h2>
+  Context and Technical Details
+</h2>
+  
+<ul>
+  <li>Since X introduced the new link browser in October 2025, tweet links are preloaded in the background when a tweet is opened. This is not good security practice in general, for privacy and device security.</li>
+  <li>During the tweet link preload, the X browser context (based on WebKit) loads the third-party webpage containing FedCM, invokes the FedCM request to log in, which triggers the device-native browser login screen, which on iOS is like <a href="https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession">ASWebAuthenticationSession</a>.</li>
+  <li>The FedCM request login screen is shown in a modal Safari webview, obscuring the original post.</li>
+  <li>FedCM is a new and developing web standard, aiming to provide device-native login screens for federated logins, augmenting and replacing OAuth and OpenID Connect. FedCM was created in the context of third-party cookies being blocked in browsers.</li>
+</ul>
+
+<h2>
+  Threats
+</h2>
+
+<p>
+  This bug in X creates critical security vulnerabilities, with no intentional user interaction, confirmation or prompts.
+</p>
+
+<ul>
+  <li>0-click phishing pages — "please log in to X again" / "sign in to Google to view this document"…</li>
+  <li>0-click file downloads</li>
+  <li>0-click client-side malware — using the FedCM webpage to load and execute content with HTML and JS</li>
+  <li>0-click server-delivered malware — using the FedCM request to respond with malware from a threat actor controlled server</li>
+  <li>0-click adult content</li>
+</ul>
+
+<h3>
+  References
+</h3>
+
+<p>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/API/FedCM_API">FedCM API — MDN</a>
+</p>
+  
+  
+<script>
+
+  const run = async () => {
+    const identityCredential = await navigator.credentials.get({
+      mediation: "required",
+      identity: {
+        providers: [
+          {
+            configURL: "https://fedcm-demo-idp.dev/fedcm.json",
+            clientId: "***",
+            params: {},
+          },
+        ],
+      }
+    })
+  }
+
+  run()
+  
+
+</script>
+
+</body>
+
+</html>
