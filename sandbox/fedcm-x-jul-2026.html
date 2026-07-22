@@ -22,6 +22,12 @@
       font-size: 1.2rem;
     }
 
+    pre {
+      background: #eee;
+      padding: 2rem;
+      width: max-content;
+    }
+
     code {
       font-family: ui-monospace, monospace;
     }
@@ -107,8 +113,7 @@
 </p>
 
 <p>
-<pre><code>
-const run = async () => {
+<pre><code>const run = async () => {
   const identityCredential = await navigator.credentials.get({
     mediation: "required",
     identity: {
